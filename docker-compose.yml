@@ -7,3 +7,7 @@ services:
     ports:
       - "80:8888"
     entrypoint: jupyter-lab
+    volumes:
+      - type: bind
+        source: ./home
+        target: /root/home
