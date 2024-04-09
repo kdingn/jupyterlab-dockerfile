@@ -11,10 +11,3 @@ services:
       - type: bind
         source: ./home
         target: /root/home
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]

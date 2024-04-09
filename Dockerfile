@@ -1,4 +1,3 @@
-# FROM nvidia/cuda:11.8.0-runtime-ubuntu20.04
 FROM ubuntu:20.04
 
 RUN apt update && apt install -y \
