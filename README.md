@@ -5,10 +5,10 @@
 ```sh
 git clone https://github.com/kdingn/jupyterlab-dockerfile.git
 cd jupyterlab-dockerfile
-docker compose up -d --build
+docker compose up --build -d
 ```
 
-→ Access to http://localhost on browsr
+→ Access to http://localhost:8888 on browsr
 
 ## ⚙Settings
 
