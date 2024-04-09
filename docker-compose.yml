@@ -5,9 +5,16 @@ services:
       dockerfile: Dockerfile
     container_name: jupyterlab
     ports:
-      - "80:8888"
-    entrypoint: jupyter-lab
+      - "8888:8888"
+    entrypoint: jupyter lab
     volumes:
       - type: bind
         source: ./home
         target: /root/home
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
