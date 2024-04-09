@@ -1,9 +1,9 @@
 services:
-  app:
+  jupyterlab-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jupyterlab
+    container_name: jupyterlab-app
     ports:
       - "8888:8888"
     entrypoint: jupyter lab
