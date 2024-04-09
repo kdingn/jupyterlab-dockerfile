@@ -19,7 +19,7 @@ RUN git clone https://github.com/pyenv/pyenv.git $PYENV_ROOT && \
     pyenv install $VERSION && \
     pyenv global $VERSION
 
-COPY pyproject.toml /
+COPY pyproject.toml poetry.lock /
 RUN pip install -U pip && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
