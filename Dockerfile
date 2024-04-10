@@ -10,7 +10,8 @@ RUN apt update && apt install -y \
     libreadline-dev \
     libsqlite3-dev \
     libssl-dev \
-    libffi-dev
+    libffi-dev \
+    liblzma-dev
 
 ARG VERSION=3.11.8
 ENV PYENV_ROOT /root/.pyenv
