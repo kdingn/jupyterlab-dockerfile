@@ -43,6 +43,9 @@ librosa = "^0.10.1"
 datasets = "^2.18.0"
 langchain = "^0.1.14"
 evaluate = "^0.4.1"
+nlp = "^0.4.0"
+accelerate = "^0.29.3"
+wave = "^0.0.2"
 
 
 [[tool.poetry.source]]
